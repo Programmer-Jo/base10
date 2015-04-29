@@ -10,6 +10,73 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <script>
+      var num = prompt("Please enter a ten digit number:")
+var mul = prompt("Choose the second number with less than 13 digits:")
+
+var len1 = num.length
+var len2 = mul.length
+
+
+console.log("Num 1: "+num)
+console.log("Number of digits: "+len1);
+console.log("---------------------")
+console.log("Num 2: "+mul)
+console.log("Number of digits: "+len2);
+
+
+console.log("-------------")
+var p1 = num.slice(0,1) * 1000000000
+var p2 = num.slice(1,2) * 100000000
+var p3 = num.slice(2,3) * 10000000
+var p4 = num.slice(3,4) * 1000000
+var p5 = num.slice(4,5) * 100000
+var p6 = num.slice(5,6) * 10000
+var p7 = num.slice(6,7) * 1000
+var p8 = num.slice(7,8) * 100
+var p9 = num.slice(8,9) * 10
+var p10= num.slice(9,10) 
+
+console.log(p1)
+console.log(p2)
+console.log(p3)
+console.log(p4)
+console.log(p5)
+console.log(p6)
+console.log(p7)
+console.log(p8)
+console.log(p9)
+console.log(p10)
+
+console.log("---------------")
+//mathematics
+var ans1 = mul * p1
+var ans2 = mul * p2
+var ans3 = mul * p3
+var ans4 = mul * p4
+var ans5 = mul * p5
+var ans6 = mul * p6
+var ans7 = mul * p7
+var ans8 = mul * p8
+var ans9 = mul * p9
+var ans10 = mul * p10
+
+console.log(ans1)
+console.log(ans2)
+console.log(ans3)
+console.log(ans4)
+console.log(ans5)
+console.log(ans6)
+console.log(ans7)
+console.log(ans8)
+console.log(ans9)
+console.log(ans10)
+
+console.log("-----------------")
+var finans = ans1 +ans2 +ans3 +ans4 +ans5 +ans6 +ans7 +ans8 +ans9 +ans10
+alert("The final answer is: "+finans)
+
+    </script>
     <section class="page-header">
       <h1 class="project-name">Base10</h1>
       <h2 class="project-tagline">10 digit multiplication</h2>
